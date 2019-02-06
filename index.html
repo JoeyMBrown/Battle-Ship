@@ -1,15 +1,15 @@
 <!doctype HTML>
 <html lang="en">
     <head>
-        <link rel = "stylesheet" type = "text/css" href = "index.css" />
+        <link rel = "stylesheet" type = "text/css" href = "index.css" /><!-- This is a link to our external CSS sheet, it's put in the header so it loads with the page or before. -->
         <meta charset="utf-8">
         <title>Battleship</title>
     </head>
     <body>
-        <div id="board">
+        <div id="board"> <!--  This is our game board -->
 
-            <div id="messageArea"><p></p></div>
-
+            <div id="messageArea"><p></p></div><!-- This is where messages appear (Top left) -->
+<!-- Our table is our grid that will be updated after the user guesses by setting one of the TD's classes to either hit or miss depending on where the ships are located-->
             <table>
                 <tr><td id="00"></td><td id="01"></td><td id="02"></td><td id="03"></td><td id="04"></td><td id="05"></td><td id="06"></td></tr>
 
@@ -27,10 +27,10 @@
             </table>
 
             <form>
-                <input type ="text" id="guessInput" placeholder="A0">
-                <input type ="button" id="fireButton" value="Fire!">
+                <input type ="text" id="guessInput" placeholder="A0"><!-- Here we have a text input. It's id is guessInput and the placeholder is greyed out text indicating what should be entered there. -->
+                <input type ="button" id="fireButton" value="Fire!"><!-- Here is a button, with an id firebutton.  The value of Fire! is what is displayed on the button. -->
             </form>
         </div>
-        <script src ="index.js"></script>
+        <script src ="index.js"></script><!-- This links our JavaScript page and because it's at the bottom it won't be ran until after the page is loaded.-->
     </body>
 </html>

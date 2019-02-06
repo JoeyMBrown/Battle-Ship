@@ -2,20 +2,20 @@ body {
     background-color: black;
 }
 div#board {
-    position: relative;
+    position: relative;/*relative positioning, positions an object relative to it's parent in this case that would be the body element*/
     width: 1024px;
     height: 863px;
-    margin: auto;
-    background-image: url("images/board.jpg");
+    margin: auto;/*setting the margins to auto centers an element*/
+    background-image: url("images/board.jpg");/*specifies where to get the image, in this case it's in the images and the image is called board.jpg*/
 }
 div#messageArea {
-    position: fixed;
+    position: fixed;/*A fixed position "Sticks" and element somewhere regardless of any other element.  In this case it will always be in the top left of the screen*/
     top: 5px;
     left: 18%;
     color: rgb(83, 175, 19);
 }
 table {
-    position: absolute;
+    position: absolute;/*absolute positioning ...*/
     left: 173px;
     top: 98px;
     border-spacing: 0px;
@@ -25,24 +25,24 @@ td {
     height: 94px;
 }
 form {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    padding: 15px;
+    position: absolute;/*again, absolute positioning ... */
+    bottom: 0px;/*how far from the bottom this element should be*/
+    right: 0px;/*How far from the right side of the screen this element should be*/
+    padding: 15px;/*padding provides this much space around the element in all directions*/
     background-color: rgb(83, 175, 19);
 }
 form input {
     background-color: rgb(152, 207, 113);
     border-color: rgb(83, 175, 19);
-    font-size: 1em;
+    font-size: 1em;/*A form of font measurement google for more info*/
 }
-.hit {
-    background-image: url("images/ship.png");
-    background-repeat: no-repeat;
-    background-position: center;
+.hit {/*This is defining a class, in doing this we can later assign this class to an element that will provide these specifications*/
+    background-image: url("images/ship.png");/*again here specifying where to find the image, in the images folder*/
+    background-repeat: no-repeat;/*Tells the image not to repeat itself*/
+    background-position: center;/*positions the image in the center of the screen*/
 }
-.miss {
-    background-image: url("images/miss.png");
-    background-repeat: no-repeat;
-    background-position: center;
+.miss {/*This is defining a class, in doing this we can later assign this class to an element that will provide these specifications*/
+    background-image: url("images/miss.png");/*again here specifying where to find the image, in the images folder*/
+    background-repeat: no-repeat;/*Tells the image not to repeat itself*/
+    background-position: center;/*positions the image in the center of the screen*/
 }
